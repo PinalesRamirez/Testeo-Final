@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #21FA90;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+/* header */
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: #ffffd5;
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #553739;
+    padding: 0 10px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #477998, 0 0 15px #477998, 0 0 30px #477998, 0 0 50px #477998;
+}
+
+header .nabvar{
+    position: relative;
+    display: flex;
+
+}
+header .nabvar li {
+    list-style: none;
+    margin-left: 30px;
+
+}
+header .nabvar li a{
+    text-decoration: none;
+    color: #62C370;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+
+}
+header .nabvar li a:hover{
+    color: #ffffd5;
+
+}
+
+/*circulo*/
+
+.circulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #424651;
+    clip-path: circle(800px at right 500px);
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* Contenedor de Formulario */
+
+.Contenedor-Form{
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    height: 130vh;
+    background: #26413C;
+    z-index: 20;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: space-around;
+    color: white;
+    padding: 1.5em;
+    
+}
+
+.brand{
+    text-align: center;
+    font-size: 3em;
+    margin-top: 50px;
+}
+.brand span{
+    color: white;
+    text-shadow: 0 0 5px #B70E21, 0 0 15px #B70E21, 0 0 30px, 0 0 50px #B70E21;
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+.contact-wrapper > *{
+    padding: 2em;
+    
+}
+
+.contact-form{
+    background-color: #4C4C4C;
+}
+.contact-info{
+    background-color: #0D1B1E;
+
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-form h3{
+    text-shadow: 0 0 5px #477998, 0 0 15px #477998;
+
+}
+.contact-form form .block{
+    grid-column: 1 / 3;
+}
+
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+    text-shadow: 0 0 5px #477998, 0 0 15px #477998;
+
+}
+.contact-form form button, 
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #d63031;
+    outline: 0;
+    color: white;
+    
+}
+
+.contact-form form button{
+    background: #B70E21;
+    color: black;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+    background: #d63031;
+    color: white;
+    transition: background-color 1s ease-in-out;
+    outline: 0;
+}
+
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+    padding: 1em;
+    text-align: left;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+.contact-info ul li{
+    padding: .3em;
+}
+
+.redesociales li{
+    padding: 10px;
+}
+
+.redessociales li a{
+    color: #ffffd5;
+    font-size: 1.5em;
+    transition: 0.3s;
+
+}
+.redessociales li a:hover{
+    color: #7a551c;
+    
+}
+
